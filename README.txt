@@ -1,1 +1,2 @@
-Python
+言語：Python
+エディタ：VScode
