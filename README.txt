@@ -2,5 +2,5 @@
 エディタ：VScode
 
 main.py の実行手順
-1. cd (path)く
+1. cd (path)
 2. main.py
