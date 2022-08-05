@@ -1,6 +1,6 @@
 path = "./dictionary-data.txt"
 
-file = open(path, mode="r", encoding="shift-JIS")
+file = open(path, mode="r", encoding="UTF-8")
 
 dictionary = []
 for word in file.readlines():
