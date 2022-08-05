@@ -2,10 +2,13 @@ path = "./dictionary-data.txt"
 
 file = open(path, mode="r", encoding="UTF-8")
 
-dictionary = []
+dictionary = {}
+ID = 1
 for word in file.readlines():
-    dictionary.append(word.strip())
+    dictionary[ID] = word.strip()
+    ID += 1
 
-print(*dictionary, sep="\n")
+for id in dictionary.keys():
+    print(str(id) + ": " + dictionary[id])
 
 file.close()
