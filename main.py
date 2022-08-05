@@ -1,6 +1,11 @@
-f = open('dictionary-data.txt', 'w')
+path = "./dictionary-data.txt"
 
-datalist = ['上手\n','一時\n','市場\n']
-f.writelines(datalist)
+file = open(path, mode="r", encoding="shift-JIS")
 
-f.close()
+dictionary = []
+for word in file.readlines():
+    dictionary.append(word.strip())
+
+print(*dictionary, sep="\n")
+
+file.close()
